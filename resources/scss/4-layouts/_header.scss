@@ -1,0 +1,23 @@
+/*--------------*\
+    header Section
+\*--------------*/
+    .header-main{
+        .navbar{
+            padding-top: 27px;
+            padding-bottom: 28px;
+            .navbar-brand{
+                max-width: 176px;
+            }
+            .navbar-nav{
+                .nav-item{
+                    + .nav-item {
+                        margin-left: 24px;
+                        @include grid-md-down {
+                            margin-left: 0;
+                          }
+                    }
+                }
+            }
+        }
+    
+    }

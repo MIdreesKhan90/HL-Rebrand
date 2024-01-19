@@ -1,0 +1,37 @@
+.services-details {
+  padding: 30px;
+
+  h6 {
+    color: #3B446A;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p {
+    color: #3B446A;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    max-width: 650px;
+  }
+  ul{
+    margin-bottom: 24px;
+    li{
+      color: #3B446A;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.input-phone-with-code{
+    position: relative;
+    width: 100px;
+    margin-right: 10px;
+    .input-phone-number{
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+}

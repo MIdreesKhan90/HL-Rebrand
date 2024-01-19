@@ -1,0 +1,30 @@
+.bread-crumbs{
+    display: flex;
+    padding-left: 50px;
+    @include grid-md-down {
+     flex-flow: column;
+     padding-bottom: 40px;
+      }
+    .bread-crumbs-list{
+        display: flex;
+        list-style: none;
+        font-size: 18px;
+        padding-left: 0;
+        @include grid-md-down {
+          margin-bottom: 5px;
+          font-size: 14px;
+           }
+      li{
+        a{
+            color: map-get($brand-colors, gray) !important;
+            text-decoration: none;
+        }
+      }
+      + .bread-crumbs-list{
+        margin-left: 48px;
+        @include grid-md-down {
+          margin-left: 0;
+           }
+      }
+    }
+}

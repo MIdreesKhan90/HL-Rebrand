@@ -1,0 +1,25 @@
+.section-blog{
+    .card{
+        box-shadow: 0px 15px 20px rgba(59, 68, 106, 0.06);
+        border: none;
+        height: 476px;
+        @include transition(all .4s ease);
+       
+
+
+        @include grid-md-down {
+            height: auto;
+            margin-top: 20px;
+          }
+
+          a{
+            color:  map-get($social-colors,color-brand-blue);text-decoration: none;
+
+           
+          } 
+
+          &:hover{
+            box-shadow: 0px 15px 20px rgba(59, 68, 106, 0.2);
+          }
+    }
+}

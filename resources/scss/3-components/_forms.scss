@@ -1,0 +1,134 @@
+/*--------------*\
+    Form Section
+\*--------------*/
+.section-signup{   
+    min-height: 100vh;
+    background: rgb(67,97,238);
+    background: linear-gradient(90deg, rgba(67,97,238,1) 50%, rgba(255,255,255,1) 50%);
+    @include grid-sm-down {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(67,97,238,1)67%);
+      }
+      @include grid-md-down {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 64%, rgba(67,97,238,1)64%);
+        }
+      .row{
+        @include grid-md-down {
+          flex-direction: column-reverse;
+          align-items: center;
+          }
+      }
+  .left-design{
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+    @include grid-md-down {
+        padding: 30px 10px;
+      }
+      .form-design{
+        @include grid-md-down {
+            margin: 30px 0px;
+          }
+      }
+  }
+  .right-form{
+    padding: 40px;
+    height: 100%;
+    @include grid-md-down {
+        padding: 20px 10px;
+      }
+      a{
+        @include grid-md-down {
+            width: 100%;
+            + a{
+                margin-left: 0 !important;
+                margin-top: 20px;
+            }
+          }
+      }
+  }
+  .form-control{
+    min-height: 60px;
+    border: 1px solid map-get($brand-colors,midnight-moss);
+    @include grid-md-down {
+        min-height: 40px;
+      }
+  }
+  .before{
+    position: relative;
+    z-index: 2;font-size:24px;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-bottom: 2px dashed map-get($social-colors,color-primary);
+        z-index: -1;
+    }
+    b{
+        padding: 8px 16px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.form-label{
+  font-weight: 600;
+}
+
+
+
+
+
+.form-wegit{
+    position: relative;
+    input{
+        box-shadow: 0px 5px 20px rgba(59, 68, 106, 0.2);
+        border-radius: 16px;
+        padding-left: 24px;
+        padding-right: 200px;
+        border: 1px solid map-get($brand-colors,white);
+        min-height: 80px;
+        @include grid-md-down {
+            padding: 0px 0 0 10px;   
+            min-height: 60px;
+          }
+
+          &::-webkit-input-placeholder { /* Edge */
+            color:map-get($brand-colors,dark-grey-1);
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color:map-get($brand-colors,dark-grey-1);
+          }
+          
+          &::placeholder {
+            color: map-get($brand-colors,dark-grey-1);
+          }
+
+    }
+    .btn-brand{
+        position:absolute;
+        top: 0;
+        right:0;
+        @include grid-md-down {
+            position:unset;   
+            margin-top: 20px;
+            width: 100%;
+            // margin-left: 0 !important;
+          }
+    }
+}

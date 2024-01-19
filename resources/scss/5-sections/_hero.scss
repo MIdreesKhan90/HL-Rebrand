@@ -1,0 +1,12 @@
+/*--------------*\
+    Hero Section
+\*--------------*/
+.section-hero{
+    padding: 32px 0 41px;
+    .content{
+        padding-top: 190px;
+      @include grid-md-down {
+        padding-top: 0px;   
+      }
+    }
+}

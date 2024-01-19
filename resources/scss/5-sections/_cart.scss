@@ -1,0 +1,140 @@
+.cart-mid-sec{
+    .mid-white-box{
+        border-radius: 24px 24px 0 0;
+        margin-bottom: 0;
+    }
+}
+.cart-table-col{
+    
+    padding: 14px 0 0;
+
+    h4{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+}
+.cart-table{
+
+    table,td,tr,thead,tbody,th{
+
+        @include grid-sm-down {
+            display: block;
+        }
+
+        tr{
+            @include grid-sm-down {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+
+        .cart-table-title-col{
+            @include grid-sm-down {
+                width: 100%;
+                padding: 10px 0;
+            }   
+        }
+    }
+    table{
+        width: 100%;
+    }
+
+    td{
+        padding: 16px 0;
+
+        
+    @include grid-lg-down {
+        padding: 10px 0;
+      }
+
+      @include grid-sm-down {
+        padding: 10px 10px;
+      }
+    }
+}
+
+.cart-table-title{
+    font-size: 20px;
+    color:  map-get($social-colors, color-brand-blue);
+    font-weight: 400;
+
+    @include grid-lg-down {
+        font-size: 18px;
+      }
+
+      @include grid-sm-down {
+        font-size: 16px;
+      }
+}
+
+.cart-table-counter-col{
+    text-align: center;
+}
+
+.cart-table-price{
+    font-weight: 600;
+font-size: 24px;
+color:  map-get($social-colors, color-brand-blue);
+
+@include grid-lg-down {
+    font-size: 22px;
+  }
+
+  @include grid-sm-down {
+    font-size: 18px;
+  
+  }
+
+}
+
+.cart-table-del{
+    
+    a{
+        color:  map-get($social-colors, color-light);
+        text-decoration: none;
+        font-size: 24px;
+
+        @include grid-lg-down {
+            font-size: 22px;
+          }
+
+        &:hover , &:focus{
+            color:  map-get($social-colors, color-brand-blue);
+        }
+    }
+}
+
+.cart-total-price{
+    background:  map-get($social-colors, color-brand-blue);
+    padding: 25px 60px 25px 105px;
+    border-radius: 0 0 24px 24px;    
+    font-size: 28px;
+    color: map-get($brand-colors, white);
+    font-weight: 600;margin-bottom: 30px;
+
+    @include grid-lg-down {
+        padding: 25px 42px 25px 87px;
+        font-size: 24px;
+      }
+
+      @include grid-sm-down {
+        
+        font-size: 22px;
+        padding: 15px 24px;
+      }
+}
+
+.cart-total-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.next-btn-main {
+    .btn{
+        padding: 14px 32px;
+    }
+}

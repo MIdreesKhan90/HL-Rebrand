@@ -1,0 +1,111 @@
+/*--------------*\
+    Tabs Section
+\*--------------*/
+.section-tabs {
+    .filter-by-category {
+        display: flex;
+        padding-left: 0;
+
+        a {
+            padding: 0 !important;
+            color: map-get($brand-colors, gray) !important;
+            font-size: 18px;
+
+            &.active {
+                color: map-get($brand-colors, btn-brand) !important;
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+.category-breadcrumb {
+    display: flex;
+    @include grid-md-down {
+        flex-direction: column;
+    }
+}
+
+.filter-by-category {
+    list-style: none;
+    @include grid-md-down {
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin-right: 50px;
+        @include grid-md-down {
+            width: 46%;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: map-get($social-colors, color-brand-blue);
+
+            &:hover {
+                color: map-get($brand-colors, btn-brand);
+            }
+
+            &.active {
+                position: relative;
+                color: map-get($brand-colors, btn-brand);
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -12px;
+                    left: 50%;
+                    background-color: map-get($brand-colors, btn-brand);
+                    width: 50%;
+                    height: 4px;
+                    transform: translateX(-50%);
+                    border-radius: 40px;
+                    @include grid-md-down {
+                        left: 0;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &.nav {
+        li {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.section-categories {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.services-sub-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+    li {
+        margin-right: 16px;
+        a {
+            color: #3B446A;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 30px;
+            text-decoration: none;
+            &.active {
+                &::after {
+                    display: none;
+                }
+                background-color: #FF006E;
+                color: #fff !important;
+                border: none;
+            }
+        }
+    }
+}

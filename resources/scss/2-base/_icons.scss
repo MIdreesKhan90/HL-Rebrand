@@ -1,0 +1,75 @@
+/*--------------*\
+    Icon Section
+\*--------------*/
+
+.dot {
+  &:before {
+    content: "\2022";
+  }
+}
+
+i {
+  &[class*="h-icon-"] {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+.icon{
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+$icons: (
+  "facebook" "svg" 10px 10px,
+  "twitter" "png" 20px 20px,
+  "star" "svg" 25px 25px,
+  "arrow-right" "svg" 14px 0px,
+  "wash" "svg" 156px 156px,
+  "price-wash" "svg" 163px 157px,
+  "washing-iron" "svg" 80px 80px,
+  "dry-cleaning" "svg" 80px 80px,
+  "ironing" "svg" 80px 80px, 
+  "quilts" "svg" 80px 80px, 
+  "alterations" "svg" 80px 80px, 
+  "heading" "svg" 30px 16px, 
+  "24th" "svg" 80px 80px, 
+  "mobile-app" "svg" 80px 80px, 
+  "percent" "svg" 80px 80px, 
+  "washing-service" "svg" 80px 80px, 
+  "cleaning-service" "svg" 80px 80px, 
+  "ironing-service" "svg" 80px 80px, 
+  "decrement" "svg" 16px 5px, 
+  "laundary-service" "svg" 80px 75px, 
+  "t-shirt" "svg"74px 80px, 
+  "shirt-ironing" "svg"80px 75px, 
+  "dry-clean" "svg"156px 156px, 
+  "quilts-bulky" "svg"175px 156px, 
+  "ironing-banner" "svg"135px 135px, 
+  "alterations-banner" "svg"160px 160px, 
+  "google" "svg"34px 35px,
+  "search-service" "svg"30px 32px,
+  "suitable" "svg"32px 32px,
+  "dont-include" "svg"32px 32px,
+  "collection" "svg"32px 32px,
+  "laundry-delivery" "svg"32px 32px,
+);
+
+@each $name, $fileType, $width, $height in $icons {
+  .icon-#{$name} {
+    display: inline-block;margin-left: 3px;
+    background-image: url($icons-path + "/" + $name + "." + $fileType);
+    @if ($width != "") {
+      width: $width;
+    }
+    @if ($height != "") {
+      height: $height;
+    }
+  }
+}
+
+
+.list-details{
+  .icon-wash{
+    width: 80px;height: 80px;background-size: cover;
+  }
+}

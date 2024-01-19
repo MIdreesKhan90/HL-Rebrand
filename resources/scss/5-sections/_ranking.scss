@@ -1,0 +1,22 @@
+// section ranking 
+.section-ranked{
+    padding: 26px 0;
+
+}    
+.has-arrow{
+    position: relative;
+}
+.has-arrow:after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url($images-path + '/ranking-image.png');
+    background-repeat: no-repeat;
+    @include grid-md-down {
+        content: unset;
+      }
+}

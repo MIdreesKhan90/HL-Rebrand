@@ -1,0 +1,33 @@
+.edit-link{
+    font-size: 18px;
+    color:map-get($brand-colors, btn-brand);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover{
+        color:map-get($brand-colors, cornflower);
+    }
+}
+
+.summary-content{
+
+    h6{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 18px;
+        margin-bottom: 25px;
+
+        a{
+            color:map-get($social-colors, color-brand-blue);
+            text-decoration: none;
+
+            &:hover , &:focus{
+                color:map-get($brand-colors, cornflower);
+            }
+            
+        }
+    }
+}

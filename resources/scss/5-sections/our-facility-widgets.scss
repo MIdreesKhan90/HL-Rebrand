@@ -1,0 +1,20 @@
+.section-facility{
+    border-bottom: 1px dashed #D0D0D0;
+    position: relative;
+    &:before {
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+        background-image: url($images-path + '/border-bottom-image.png');
+        width: 37px;
+        height: 35px;
+        content: "";
+        background-repeat: no-repeat;
+    }
+        .border-icon{
+            position: absolute;
+            bottom: -4%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+}

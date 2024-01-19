@@ -1,0 +1,51 @@
+.aside {
+  height: 100%;
+  background-color: #E9ECEF;
+  padding: 32px 24px;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+
+  h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3B446A;
+  }
+
+  .description {
+    padding-bottom: 16px;
+    p {
+      font-size: 16px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .services-list {
+    padding: 18px 0;
+
+    div {
+      padding-bottom: 10px;
+
+      +div {
+        padding-top: 8px;
+      }
+    }
+
+    h3 {
+      margin-left: 16px;
+      color: #3B446A;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .estimated-price{
+    p{
+      font-size: 18px;
+      font-weight: 600;
+      color: #3B446A;
+    }
+  }
+
+}

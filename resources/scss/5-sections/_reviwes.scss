@@ -1,0 +1,19 @@
+
+
+.section-reviews{
+    position: relative;
+    .reviews{
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    &:before{
+        content: "";
+        height: 152px;
+        width: 100%;
+        background-color: map-get($brand-colors,papaya-orange);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}

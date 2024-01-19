@@ -1,0 +1,26 @@
+/*--------------*\
+    Booking Section
+\*--------------*/
+
+.section-booking{
+    box-shadow: 0px 5px 20px rgba(67, 97, 238, 0.5);
+    .position-relative{
+        .img-1{
+            position: absolute;
+            top: -30px;
+            right: 20px;
+        }
+        .img-2{
+            position: absolute;
+            bottom: -20px;
+            left: 135px;
+        }
+    }
+}
+
+.aside-link{
+    a{
+        text-decoration: none;
+        color: map-get($brand-colors,  btn-brand);
+    }
+}

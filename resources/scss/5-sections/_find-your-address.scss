@@ -1,0 +1,403 @@
+.grey-mid-sec {
+    padding: 55px 0 55px;
+
+    @include grid-md-down {
+        padding: 50px 0;
+    }
+}
+
+
+.back-arrow {
+    padding-left: 16px;
+    margin-bottom: 36px;
+
+    @include grid-md-down {
+        padding-left: 0;
+    margin-bottom: 20px;
+    }
+}
+
+.arrow-back-link {
+    color: map-get($brand-colors, btn-brand);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+
+
+    &:hover,
+    &:focus {
+        color: map-get($brand-colors, cornflower);
+    }
+
+    i {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+
+}
+
+.progress-bar-sec {
+
+    margin-bottom: 37px;
+
+    h5 {
+        color: map-get($social-colors, color-brand-blue);
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        margin: 0 0 10px;
+    }
+
+    p {
+        color: map-get($social-colors, color-brand-blue);
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+    }
+
+}
+
+.progress-bar-main {
+    display: block;
+    width: 100%;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    height: 8px;
+    margin: 0 0 10px;
+}
+
+.progress-bar-fill {
+    background: map-get($brand-colors, cornflower);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 100px;
+    height: 100%;
+}
+
+.mid-white-box {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+    padding: 37px 32px;
+
+    @include grid-md-down {
+        padding: 30px 15px;
+      }
+}
+
+.mid-white-box-title {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+border-bottom: 1px dashed map-get($brand-colors, light-grey);
+padding: 0 0 18px;
+ margin: 0 0 36px;
+ @include grid-md-down {   
+    padding: 0 0 15px;
+    margin: 0 0 30px;
+  }
+
+  @include grid-sm-down {
+    display: block;
+     
+   }
+    h3 {
+        
+        
+        font-weight: 600;
+        font-size: 28px;
+
+        @include grid-md-down {
+            font-size: 22px;
+            margin-bottom: 5px;   
+          }
+    }
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 16px;
+    width: 100%;
+    
+
+    @include grid-sm-down {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+      
+        min-height: 60px;
+        border: 1px solid map-get($brand-colors, border-grey);
+        color: map-get($social-colors, color-light);                
+       
+       &:focus-visible{
+        border: 2px solid map-get($brand-colors, input-focus);
+        color: map-get($social-colors, color-brand-blue);                
+        outline: none;
+        box-shadow: none;
+        outline: 4px solid map-get($brand-colors, input-active-focus);
+        }
+        &:hover{
+            border: 1px solid map-get($brand-colors, input-focus);
+            color: map-get($social-colors, color-brand-blue);                
+            outline: none;
+            box-shadow: none;
+            outline: 1px solid map-get($brand-colors, input-focus);
+          }
+          &.valid{
+            border: 1px solid map-get($brand-colors, color-brand-blue);
+            color: map-get($social-colors, color-brand-blue);                
+            outline: none;
+            box-shadow: none;
+            outline: 1px solid map-get($brand-colors, color-brand-blue);
+          } 
+
+    }
+
+    select{
+        background-image: url(../images/icons/select-arrow.svg);
+        background-position: 98% center;
+        background-repeat: no-repeat;
+        background-size: 16px;         
+        cursor: pointer;        
+        padding-right: 40px;
+    }
+
+    label{
+        font-weight: 600;
+        font-size: 16px;
+        color: map-get($social-colors, color-brand-blue);
+        margin: 0 0 10px;
+    }
+
+    .btn {
+        min-height: 58px;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: map-get($social-colors, color-light);
+        opacity: 1;
+        
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: map-get($social-colors, color-light);
+        opacity: 1;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: map-get($social-colors, color-light);
+        opacity: 1;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: map-get($social-colors, color-light);
+        opacity: 1;
+      }
+}
+
+.form-col{
+    &.form-postcode-col-left {
+        width: 74%;
+
+        @include grid-sm-down {
+            width: 100%;
+          }
+    }
+
+    &.form-col.form-postcode-btn-col {
+        width: 26%;
+        margin-top: 36px;
+        @include grid-sm-down {
+            width: 100%;
+            margin-top: 0;
+          }
+    }
+}
+
+
+
+.manually-add-list {
+    padding-top: 18px;
+    margin-bottom: 37px;
+
+    @include grid-sm-down {
+        padding-top: 15px;
+    margin-bottom: 15px;
+      }
+
+    .manually-add-list-link {
+        font-weight: 400;
+        font-size: 18px;
+        color: map-get($brand-colors, btn-brand);
+
+        &:hover , &:focus{
+            color: map-get($brand-colors, cornflower);   
+        }
+
+    }
+}
+
+.select-add-list{
+    border: 1px solid map-get($brand-colors, border-grey);
+    padding: 14px 20px;
+    border-radius: 8px;
+
+    @include grid-sm-down {
+        padding: 14px 15px;
+      }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li{
+            margin-bottom: 31px;
+
+            @include grid-md-down {
+                margin-bottom: 15px;
+              }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+            a{
+                color: map-get($social-colors, color-brand-blue);
+                font-size: 18px;
+                font-weight: 400;
+                text-decoration: none;
+
+                @include grid-md-down {
+                    font-size: 16px;
+                  }
+
+                &:hover, &:focus{
+                    color: map-get($brand-colors, btn-brand);
+                }
+            }
+        }
+    }
+}
+
+.next-btn-main{
+    text-align: right;
+    padding-top: 10px;
+    .btn{
+        min-width: 133px;        
+        padding: 14px 10px;
+    }
+}
+
+.address-radio-list{
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li{
+            display: inline-block;
+            margin-right: 28px;
+            margin-bottom: 10px;
+
+            @include grid-md-down {
+                margin-right: 10px;
+            margin-bottom: 5px;
+              }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+
+    [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;    
+    cursor: pointer;    
+    display: inline-block;
+    font-size: 20px;
+    color: map-get($social-colors, color-brand-blue);
+    border: 2px solid map-get($brand-colors, border-grey);
+    border-radius: 10px;
+    padding: 16px 15px;
+    text-align: center;
+    min-width: 168px;font-weight: 400;
+
+    @include grid-md-down {
+        font-size: 16px;
+        padding: 12px 15px;
+        min-width: 125px;
+      }
+
+      @include grid-sm-down {           
+        min-width: 105px;
+      }
+
+}
+
+i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+
+    @include grid-md-down {
+       margin-right: 5px;
+      }
+}
+
+[type="radio"]:not(:checked) + label {
+    border-color: map-get($brand-colors, border-grey);
+}
+[type="radio"]:checked + label {
+    border-color: map-get($social-colors, color-brand-blue);
+}
+
+}
+
+.manual-add-block{
+    padding-bottom: 1px;
+    margin-bottom: 32px;
+    .form-col{
+        margin-bottom: 40px;
+    }
+    
+}
+
+.form-col-2{
+    width: 50%;
+
+    @include grid-sm-down {
+        width: 100%;
+      }
+
+      select{
+        
+        background-position: 96% center;
+        
+    }
+}
+
+.address-type-box{
+    padding-bottom: 10px;margin-bottom: 30px;
+}

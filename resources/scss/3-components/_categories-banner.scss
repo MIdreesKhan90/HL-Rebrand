@@ -1,0 +1,16 @@
+.section-category-banner{
+    background-image: url($images-path + "/bg-hero-categories.png");
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    .banner-content{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    @include grid-md-down {
+       padding-top: 40px;
+       padding-bottom: 40px;
+           }
+}

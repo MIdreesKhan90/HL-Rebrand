@@ -1,0 +1,63 @@
+/*-----------------*\
+    Button Section
+\*-----------------*/
+
+.btn{
+
+  &:hover,
+  &:focus{
+    outline: none;
+  }
+}
+.btn{
+  border-radius: 16px;
+  font-size: 1.125em;
+  font-weight: 600;
+  &.btn-brand{
+
+    box-shadow: 0px 5px 10px rgba(255, 0, 110, 0.2);
+    background: map-get($brand-colors, btn-brand);
+    color: map-get($brand-colors,white) !important;
+
+    &:hover{
+      background:map-get($brand-colors, dark-marron)  ;
+      border: 1px solid map-get($brand-colors, dark-marron);
+      color: map-get($brand-colors, white )  !important;
+    }
+    &.outline{
+      background-color: transparent;
+      border: 1px solid map-get($brand-colors, btn-brand);
+      color: map-get($brand-colors, btn-brand) !important;
+      &:hover{
+        background:map-get($brand-colors, dark-marron)  ;
+        color: map-get($brand-colors, white) !important;
+        border: 1px solid map-get($brand-colors, dark-marron);
+
+      }
+    }
+  }
+    .btn-check:checked + &,
+    :not(.btn-check) + &:active,
+    &:first-child:active,
+    &.active,
+    &.show {
+        box-shadow: 0px 5px 10px rgba(255, 0, 110, 0.2);
+        background: map-get($brand-colors, btn-brand);
+        color: map-get($brand-colors,white) !important;
+
+        &:hover{
+            background:map-get($brand-colors, dark-marron)  ;
+            border: 1px solid map-get($brand-colors, dark-marron);
+            color: map-get($brand-colors, white )  !important;
+        }
+    }
+
+}
+.google-link{
+padding: 18px 77px;
+border: 1px solid map-get($brand-colors, midnight-moss) !important;
+@include grid-md-down {
+  padding: 10px 25px;
+}
+
+}

@@ -1,0 +1,54 @@
+/*--------------*\
+
+   Privacy Policy Section
+
+\*--------------*/
+.privacy-policy-content{
+  padding-bottom: 92px;
+  h2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 13px;
+    margin-top: 64px;
+
+    &:first-child{margin-top: 0;}
+
+    @include grid-sm-down {
+      font-size: 26px; line-height: 34px;margin-top: 34px;
+    }
+  }
+
+  p{
+    font-weight: 400;
+font-size: 18px;
+line-height: 33px;
+@include grid-sm-down {
+  font-size: 16px; line-height: 28px;
+}
+
+a{
+  color:  map-get($brand-colors,btn-brand);
+
+  &:hover{
+    color:  map-get($brand-colors,cornflower);
+  }
+}
+  }
+
+  ul{
+    margin-top: 36px;
+    margin-left: 0;
+    padding-left: 26px;
+    margin-bottom: 32px;
+    li{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 33px;    
+
+      @include grid-sm-down {
+        font-size: 16px; line-height: 28px;
+      }
+    }
+  }
+}

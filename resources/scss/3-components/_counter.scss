@@ -1,0 +1,32 @@
+.counter {
+    display: flex;
+    font-size: 16px;
+    .increment-count {
+        width: 30px;
+        height: 30px;
+        border: 1px solid map-get($social-colors,color-light );
+        border-radius: 50%;
+        text-align: center;
+        line-height: 31px;cursor:pointer;
+        i{
+            color: map-get($social-colors,color-light );
+            font-size: 20px;
+        }
+    }
+    .total-count{
+        margin: 0 12px;
+        line-height: 32px;    width: 18px;
+        text-align: center;
+    }
+    .decrement-count{
+        width: 30px;
+        height: 30px;
+        border: 1px solid map-get($social-colors,color-light );
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;cursor:pointer;
+        i{
+            color: map-get($social-colors,color-light );
+        }
+    }
+}
